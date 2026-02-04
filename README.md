@@ -6,32 +6,31 @@ Digitalt verktøy for skåring av abstinens og psykiatriske tilstander. Inkluder
 
 ```
 ruskalk-scoring/
-├── frontend/              # Frontend applikasjon
-│   ├── css/
-│   │   └── styles.css     # CSS styling
-│   ├── js/
-│   │   ├── main.js        # Hovedlogikk
-│   │   ├── utils.js       # Hjelpefunksjoner
-│   │   ├── ciwa-ar.js     # CIWA-Ar skjemadata
-│   │   ├── ciwa-b.js      # CIWA-B skjemadata
-│   │   ├── cows.js        # COWS skjemadata
-│   │   ├── madrs.js       # MADRS skjemadata
-│   │   └── ymrs.js        # YMRS skjemadata
-│   ├── index.html         # Hovedside
-│   ├── favicon.png        # Ikon
-│   ├── robots.txt         # SEO - søkemotordirektiver
-│   └── sitemap.xml        # SEO - sitemap
-├── backend/               # Backend server
-│   ├── server.js          # Express server med e-post API
-│   ├── package.json       # Backend dependencies
-│   ├── package-lock.json  # Lock file
-│   └── node_modules/      # NPM pakker
-├── docs/                  # Dokumentasjon
-│   ├── README-Backend.md  # Backend dokumentasjon
-│   └── SEO-README.md      # SEO implementering guide
-├── package.json           # Root package.json (scripts)
-├── README.md              # Dette dokumentet
-└── CNAME                  # GitHub Pages domain
+├── css/                   # CSS styling
+│   └── styles.css
+├── js/                    # JavaScript moduler
+│   ├── main.js           # Hovedlogikk + Google Analytics
+│   ├── utils.js          # Hjelpefunksjoner + tracking
+│   ├── ciwa-ar.js        # CIWA-Ar skjemadata
+│   ├── ciwa-b.js         # CIWA-B skjemadata
+│   ├── cows.js           # COWS skjemadata
+│   ├── madrs.js          # MADRS skjemadata
+│   └── ymrs.js           # YMRS skjemadata
+├── backend/              # Backend server
+│   ├── server.js         # Express API med rate limiting
+│   ├── package.json      # Backend dependencies
+│   └── node_modules/     # NPM pakker
+├── docs/                 # Dokumentasjon
+│   ├── README-Backend.md # Backend guide
+│   ├── Google-Analytics-Setup.md # Analytics guide
+│   └── SEO-README.md     # SEO implementering
+├── index.html            # Hovedside (SEO optimalisert)
+├── favicon.png           # Ikon
+├── robots.txt            # SEO - søkemotordirektiver
+├── sitemap.xml           # SEO - sitemap
+├── CNAME                 # GitHub Pages custom domain
+├── package.json          # Root scripts
+└── README.md             # Dette dokumentet
 ```
 
 ## 🚀 Komme i gang
