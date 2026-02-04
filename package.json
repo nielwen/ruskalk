@@ -1,12 +1,14 @@
 {
   "name": "ruskalk-scoring-tool",
-  "version": "1.0.0",
-  "description": "Ruskalk scoring tool with frontend and backend",
+  "version": "2.0.0",
+  "description": "Ruskalk - Klinisk scoringsverktøy for rusbehandling",
   "scripts": {
     "start": "cd backend && npm start",
     "install-backend": "cd backend && npm install",
-    "dev": "cd backend && npm run dev"
+    "dev": "cd backend && npm run dev",
+    "serve": "python -m http.server 8080"
   },
   "author": "Niels",
-  "license": "MIT"
+  "license": "MIT",
+  "homepage": "https://ruskalk.no"
 }
