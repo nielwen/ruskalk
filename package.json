@@ -1,0 +1,12 @@
+{
+  "name": "ruskalk-scoring-tool",
+  "version": "1.0.0",
+  "description": "Ruskalk scoring tool with frontend and backend",
+  "scripts": {
+    "start": "cd backend && npm start",
+    "install-backend": "cd backend && npm install",
+    "dev": "cd backend && npm run dev"
+  },
+  "author": "Niels",
+  "license": "MIT"
+}

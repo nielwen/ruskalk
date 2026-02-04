@@ -3,11 +3,61 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Skåringsverktøy</title>
+  
+  <!-- SEO: Tittel og beskrivelse -->
+  <title>Ruskalk - Klinisk scoringsverktøy - CIWA-Ar, CIWA-B, COWS, MADRS, YMRS</title>
+  <meta name="description" content="Digitalt scoringsverktøy for rusmedisin og psykiatri. Inkluderer CIWA-Ar (alkohol), CIWA-B (benzodiazepiner), COWS (opiater), MADRS (depresjon) og YMRS (mani). Gratis, norsk, medisinsk verktøy.">
+  
+  <!-- SEO: Keywords -->
+  <meta name="keywords" content="CIWA, CIWA-Ar, CIWA-B, COWS, MADRS, YMRS, scoring, rusmedisin, alkohol, benzodiazepiner, opiater, abstinens, avrusning, depresjon, deprimert, mani, bipolar, digital, gratis, norsk, medisinsk verktøy, tilbaketrekking">
+  
+  <!-- SEO: Open Graph (Facebook/sosiale medier) -->
+  <meta property="og:title" content="Ruskalk - Klinisk scoringsverktøy">
+  <meta property="og:description" content="Digitalt scoringsverktøy for rusmedisin og psykiatri. CIWA-Ar, CIWA-B, COWS, MADRS, YMRS. Gratis norsk medisinsk verktøy.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ruskalk.no">
+  <meta property="og:image" content="https://ruskalk.no/favicon.png">
+  <meta property="og:locale" content="nb_NO">
+  
+  <!-- SEO: Twitter Cards -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Ruskalk - Klinisk scoringsverktøy">
+  <meta name="twitter:description" content="Digitalt scoringsverktøy for rusmedisin og psykiatri. CIWA-Ar, CIWA-B, COWS, MADRS, YMRS.">
+  <meta name="twitter:image" content="https://ruskalk.no/favicon.png">
+  
+  <!-- SEO: Schema.org strukturert data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalWebPage",
+    "name": "Ruskalk - Klinisk scoringsverktøy",
+    "description": "Digitalt scoringsverktøy for rusmedisin og psykiatri inkludert CIWA-Ar, CIWA-B, COWS, MADRS og YMRS",
+    "url": "https://ruskalk.no",
+    "mainEntity": {
+      "@type": "MedicalDevice",
+      "name": "Digital Scoringsverktøy",
+      "description": "Verktøy for digital scoring av abstinens og psykiatriske tilstander",
+      "medicalSpecialty": ["Rusmedisin", "Psykiatri", "Indremedisin", "Allmennmedisin"]
+    },
+    "audience": {
+      "@type": "MedicalAudience",
+      "audienceType": "Leger, sykepleiere, helsepersonell"
+    },
+    "inLanguage": "nb-NO",
+    "isAccessibleForFree": true
+  }
+  </script>
+  
+  <!-- SEO: Canonical URL -->
+  <link rel="canonical" href="https://ruskalk.no/">
+  
+  <!-- Eksisterende favicons -->
   <link rel="icon" type="image/png" href="favicon.png">
   <link rel="apple-touch-icon" href="favicon.png">
   <link rel="shortcut icon" type="image/png" href="favicon.png">
   <link rel="stylesheet" href="css/styles.css">
+  
+  <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-0ZY2Y1RX6N"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -20,7 +70,12 @@
 <body>
   <header>
     <div class="container">
-      <h1>Skåringsverktøy</h1>
+      <h1>Ruskalk - Klinisk scoringsverktøy</h1>
+      <!-- SEO: Undersøk med informativ tekst -->
+      <p style="margin: 8px 0; color: var(--muted); font-size: 14px;">
+        Digitalt verktøy for scoring av abstinens og psykiatriske tilstander. 
+        Inkluderer CIWA-Ar, CIWA-B, COWS, MADRS og YMRS.
+      </p>
       <div class="tabs" role="tablist" aria-label="Velg skjema">
         <button class="tab-btn active" id="tab-ar" role="tab" aria-selected="true" aria-controls="panel-ar">
           CIWA-Ar (alkohol)
@@ -32,10 +87,13 @@
           COWS (opioider)
         </button>
         <button class="tab-btn" id="tab-madrs" role="tab" aria-selected="false" aria-controls="panel-madrs">
-          MADRS
+          MADRS (depresjon)
+        </button>
+        <button class="tab-btn" id="tab-ymrs" role="tab" aria-selected="false" aria-controls="panel-ymrs">
+          YMRS (mani)
         </button>
         <a href="https://www.alkokalk.no" target="_blank" rel="noopener" class="external-link-btn">
-          <span class="alkokalk-text"></span>Beregne alkoholenheter</span> ↗
+          <span class="alkokalk-text">Beregne alkoholenheter</span> ↗
         </a>
       </div>
     </div>
@@ -218,7 +276,7 @@
       <h2>COWS</h2>
       <p class="small">
         Clinical Opiate Withdrawal Scale<br>
-        Gi kun poeng når symptom/funn ikke var til stede før opiatabstinensene debuterte og 
+        <u>Instruksjon:</u> Gi kun poeng når symptom/funn ikke var til stede før opiatabstinensene debuterte og 
         ikke mer sannsynlig skyldes annet enn abstinenser.
       </p>
       
@@ -289,6 +347,80 @@
       </div>
     </section>
 
+    <!-- YMRS SKJEMA -->
+    <section id="panel-ymrs" role="tabpanel" aria-labelledby="tab-ymrs" hidden class="card" style="margin-top:12px;">
+      <h2>YMRS</h2>
+      <p class="small">Young Mania Rating Scale<br>
+      <u>Instruksjon:</u> Bruk all tilgjengelig klinisk informasjon for å svare på spørsmålene, inklusive det pasienten selv forteller, tidligere psykiatrisk sykehistorie, klinisk inntrykk og opplysninger fra familiemedlemmer eller andre kilder. For hvert spørsmål, velg det poenget som best beskriver pasienten de siste <strong>48 timer</strong>.
+      </p>
+      <ul class="questions" id="ymrs-questions"></ul>
+      
+      <div class="scorewrap" style="margin-top:12px;">
+        <div class="total-card">
+          <div class="total-top">
+            <div class="total-left">
+              <div class="total-num" id="ymrs-total-num">Total: 0</div>
+              <div class="badge" id="ymrs-badge" data-level="green">Alvorlighetsgrad: –</div>
+            </div>
+            <div class="right-tools">
+              <span id="ymrs-warn" class="warn-icon" title="Ubesvarte spørsmål" hidden>⚠</span>
+              <span id="ymrs-counts" class="counts">0/11 besvart</span>
+              <button id="btn_ymrs_ubesvart" class="btn" onclick="scrollToFirstUnanswered('ymrs')">
+                Gå til første ubesvarte
+              </button>
+            </div>
+          </div>
+          <div class="actions" style="margin-top:6px;">
+            <button class="btn destructive" onclick="resetForm('ymrs')">Nullstill</button>
+            <button class="btn" onclick="window.print()">Print</button>
+            <button class="btn" onclick="copySum('ymrs', this)">Kopier sum</button>
+            <button class="btn" onclick="openEmailModal('ymrs')">Send på e‑post</button>
+          </div>
+        </div>
+        <div class="small" id="ymrs-legend">
+          Alvorlighetsgrad: <8: Normal, ikke manisk. 8-20: Mulig lett manisk. 21-30: Moderat manisk. >30: Alvorlig manisk
+        </div>
+      </div>
+    </section>
+
+    <!-- KONTAKT/TILBAKEMELDING SEKSJON -->
+    <section id="contact-section" style="margin-top:12px;">
+      <details class="small">
+        <summary>Kontakt og tilbakemelding</summary>
+        <div style="padding: 16px;">
+          <p><strong>Har du spørsmål, forslag eller oppdaget feil?</strong><br>
+          Send gjerne en tilbakemelding for å hjelpe med forbedring avverktøyet.</p>
+          <form id="contact-form" onsubmit="sendFeedback(event)" style="display: flex; flex-direction: column; gap: 12px; max-width: 500px;">
+            <div>
+              <label for="feedback-type" style="display: block; margin-bottom: 4px; font-weight: 600;">Type:</label>
+              <select id="feedback-type" required style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 6px;">
+                <option value="">Velg type tilbakemelding</option>
+                <option value="Feil/Bug">Feil eller bug</option>
+                <option value="Forbedring">Forslag til forbedring</option>
+                <option value="Spørsmål">Spørsmål</option>
+                <option value="Annet">Annet</option>
+              </select>
+            </div>
+            
+            <div>
+              <label for="feedback-text" style="display: block; margin-bottom: 4px; font-weight: 600;">Melding:</label>
+              <textarea id="feedback-text" required rows="4" placeholder="Beskriv din tilbakemelding..."
+                        style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 6px; resize: vertical;"></textarea>
+            </div>
+            
+            <div style="display: flex; gap: 8px; align-items: center;">
+              <button type="submit" class="btn" style="background: #007acc; color: white;">
+                Send tilbakemelding
+              </button>
+              <button type="button" class="btn" onclick="resetContactForm()" style="background: #6c757d; color: white;">
+                Nullstill
+              </button>
+            </div>
+          </form>
+        </div>
+      </details>
+    </section>
+
     <!-- E-POST MODAL -->
     <div id="email-modal" class="modal-backdrop" role="dialog" aria-modal="true" aria-hidden="true">
       <div class="modal">
@@ -307,7 +439,7 @@
     </div>
 
     <!-- FOOTER -->
-    <footer style="margin:20px 0 60px;" class="small">
+    <footer style="margin:12px 0 20px;" class="small">
       <details id="footer-details">
         <summary>Kreditering og merknad</summary>
         
@@ -325,14 +457,27 @@
         <div id="footer-cows" class="ref" hidden></div>
         
         <div id="footer-madrs" class="ref" hidden>
-          MADRS – Montgomery–Åsberg Depression Rating Scale. 
-          Utviklet av Montgomery & Åsberg (1979). </br>Basert på versjon fra <a href="https://www.legeforeningen.no/contentassets/478e85c05e654494896c9d78110ae963/montgommery-asberg-depression-rating-scale-madrs.pdf" 
+          MADRS – Montgomery–Åsberg Depression Rating Scale. <br>
+          Utviklet av Montgomery & Åsberg (1979). <br>Basert på versjon fra <a href="https://www.legeforeningen.no/contentassets/478e85c05e654494896c9d78110ae963/montgommery-asberg-depression-rating-scale-madrs.pdf" 
                target="_blank" rel="noopener">legeforeningen.no</a>
+        </div>
+        
+        <div id="footer-ymrs" class="ref" hidden>
+          YMRS – Young Mania Rating Scale. <br>
+          Utviklet av Young et al. (1978).<br>
+          Tilpasset fra Rush, A. J., Pincus, H. A., First, M. B. et al. (2000), Psychiatric Measures, American Psychiatric Association, Washington DC
         </div>
         
         <p class="ref">
           Dette verktøyet er kun et hjelpemiddel og erstatter ikke klinisk vurdering. 
           Følg alltid lokale prosedyrer og retningslinjer.
+        </p>
+        
+        <p class="ref">
+          Digitalt scoringsverktøy for helsepersonell:<br>
+          <strong>Rus- og avhengighetsmedisin:</strong> CIWA-Ar (alkoholabstinens), CIWA-B (benzodiazepinabstinens), COWS (opiatabstinens)<br>
+          <strong>Psykiatri:</strong> MADRS (depresjon), YMRS (mani)<br>
+          Gratis digitalt verktøy for helsepersonell.
         </p>
       </details>
     </footer>
